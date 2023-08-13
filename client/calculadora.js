@@ -1,8 +1,10 @@
-let valor1 = document.querySelector('#valor1');
-let valor2 = document.querySelector('#valor2');
-let somar = document.querySelector('#somar');
+let equacao = '';
+let resultado = document.querySelector('#resultado');
 
-somar.addEventListener('click', function () {
-  let resultado = document.querySelector('#resultado');
-  resultado.value = parseInt(valor1.value) + parseInt(valor2.value);
-});
+function calcular(termo) {
+  if (termo == '=') equacao = eval(equacao);
+  else {
+    equacao += termo;
+    resultado.innerHTML = equacao;
+  }
+}

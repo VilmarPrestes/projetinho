@@ -1,0 +1,6 @@
+.botoes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+  width: 400px;
+}
