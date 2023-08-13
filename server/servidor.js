@@ -62,7 +62,16 @@ const server = http.createServer((req, res) => {
     receitas += receitaTemplate;
   }
 
-  let arquivo = fs.readFileSync(filePath).toString();
+  let arquivo;
+
+  try {
+    arquivo = fs.readFileSync(filePath).toString();
+  } catch (err) {
+    res.writeHead(404, { 'Content-Type': 'text/html' });
+    res.end('', 'utf8');
+    return;
+  }
+
   arquivo = arquivo.replace('__RECEITAS__', receitas);
 
   res.writeHead(200, { 'Content-Type': contentType });
