@@ -1,22 +1,27 @@
-html, body {
-    height: 100%;
+html,
+body {
+  height: 100%;
 }
 
 body {
-    background-color: #fafafa;
-    color: #333;
-    font-family: sans-serif;
+  background-color: #fafafa;
+  color: #333;
+  font-family: sans-serif;
 }
 
 main {
-    width: 80%;
-    max-width: 1000px;
-    margin: 0 auto;
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .post {
-    background: #fff;
-    box-shadow: 0 1px 2px 1px rgba(0,0,0,.4);
-    padding: 10px 20px;
-    margin-bottom: 20px;
+  background: #fff;
+  box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.4);
+  padding: 10px 20px;
+  margin-bottom: 20px;
+}
+
+#esse {
+  color: blue;
 }
